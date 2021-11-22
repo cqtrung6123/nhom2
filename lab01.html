@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+<head>
+  <meta charset="urf-8">
+  <title>Forms</title>
+</head>
+
+<body>
+<form action="http://fptaptech.herokuapp.com" method="get">
+  <fieldset>
+    <legend>Your Details:</legend>
+    <label>Name: <input maxlength="100" name="name" size="30" type="text"></label><br />
+    <label>Email:<input maxlength="100" name="email" size="30" type="email"></label><br />
+  </fieldset><br />
+  <fieldset>
+    <legend>Your Review</legend>
+    <p>
+      <label for="hear-about">How did you hear about us?</label>
+      <select id="hear-about" name="referrer">
+        <option value="google">Google</option>
+        <option value="friend">Friend</option>
+        <option value="advert">Advert</option>
+        <option value="other">Other</option>
+      </select>
+    </p>
+    <p>
+      Would you visit again?<br />
+      <label><input name="rating" type="radio" value="yes" />Yes</label>
+      <label><input name="rating" type="radio" value="no" />No</label>
+      <label><input name="rating" type="radio" value="maybe" />Maybe</label>
+
+    </p>
+
+    <p>
+      <label for="comments">Comments:</label><br />
+      <textarea cols="40" id="comments" rows="4"></textarea>
+
+    </p>
+    <label><input checked="checked" name="subscribe" type="checkbox" /> Sign me up for email updates</label><br />
+    <input type="submit" value="Submit review" />
+
+  </fieldset>
+</form>
+</body>
+
+</html>
